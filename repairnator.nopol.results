@@ -1,0 +1,64 @@
+nopolinfo #0
+location: FailureLocation{className='nopol_examples.nopol_example_1.NopolExampleTest', failingMethods=[], erroringMethods=[nopol_examples.nopol_example_1.NopolExampleTest#test6, nopol_examples.nopol_example_1.NopolExampleTest#test5], failures=[FailureType{failureName='java.lang.StringIndexOutOfBoundsException', failureDetail='String index out of range: -5', isError=true}, FailureType{failureName='java.lang.StringIndexOutOfBoundsException', failureDetail='String index out of range: -1', isError=true}], nbFailures=0, nbErrors=2}
+status: PATCH
+dateEnd: Thu Mar 30 16:29:29 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 1minutes 
+nb patches: 600
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/surli/failingProject/216405304/src/main/java], projectClasspath='[Ljava.net.URL;@119020fb', projectTests=[nopol_examples.nopol_example_1.NopolExampleTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 8
+nbAngelicValues: 7
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='nopol_examples.nopol_example_13.NopolExampleTest', failingMethods=[], erroringMethods=[nopol_examples.nopol_example_13.NopolExampleTest#test_1], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=1}
+status: PATCH
+dateEnd: Thu Mar 30 16:29:32 CEST 2017
+allocatedtime: 119minutes 
+passingTime: 0minutes 
+nb patches: 4
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/surli/failingProject/216405304/src/main/java], projectClasspath='[Ljava.net.URL;@ea27e34', projectTests=[nopol_examples.nopol_example_13.NopolExampleTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 3
+nbAngelicValues: 3
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='nopol_examples.nopol_example_12.NopolExampleTest', failingMethods=[], erroringMethods=[nopol_examples.nopol_example_12.NopolExampleTest#test_3], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=1}
+status: PATCH
+dateEnd: Thu Mar 30 16:29:37 CEST 2017
+allocatedtime: 119minutes 
+passingTime: 0minutes 
+nb patches: 11
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/surli/failingProject/216405304/src/main/java], projectClasspath='[Ljava.net.URL;@54a3ab8f', projectTests=[nopol_examples.nopol_example_12.NopolExampleTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 8
+nbAngelicValues: 4
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #3
+location: FailureLocation{className='nopol_examples.nopol_example_4.NopolExampleTest', failingMethods=[], erroringMethods=[nopol_examples.nopol_example_4.NopolExampleTest#test10], failures=[FailureType{failureName='java.lang.NumberFormatException', failureDetail='For input string: ""', isError=true}], nbFailures=0, nbErrors=1}
+status: PATCH
+dateEnd: Thu Mar 30 16:29:55 CEST 2017
+allocatedtime: 119minutes 
+passingTime: 0minutes 
+nb patches: 128
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/surli/failingProject/216405304/src/main/java], projectClasspath='[Ljava.net.URL;@79ab3a71', projectTests=[nopol_examples.nopol_example_4.NopolExampleTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 11
+nbAngelicValues: 8
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+

@@ -1,0 +1,3 @@
+location: SourceLocation nopol_examples.nopol_example_1.NopolExample:12
+type: CONDITIONAL
+patch: (s != null) == (index < 1)
