@@ -60,12 +60,55 @@
               <goal>check</goal>
             </goals>
             <configuration>
-              <!-- TODO: Set to false when https://github.com/INRIA/spoon/issues/3582 is fixed -->
               <includeSource>true</includeSource>
-              <includeTest>true</includeTest>
+              <includeTest>false</includeTest>
               <processors>
-                <processor>org.xwiki.tool.spoon.JUnit5JUnit4Processor</processor>
+                <processor>org.xwiki.tool.spoon.ForbiddenInvocationProcessor</processor>
+                <processor>org.xwiki.tool.spoon.ComponentAnnotationProcessor</processor>
+                <processor>org.xwiki.tool.spoon.InjectAnnotationProcessor</processor>
               </processors>
+              <processorProperties>
+                <processorProperty>
+                  <name>org.xwiki.tool.spoon.ForbiddenInvocationProcessor</name>
+                  <properties>
+                    <property>
+                      <name>methods</name>
+                      <!--
+                        - File#deleteOnExit: Does not make any sense in the context of an application server and it can
+                          cause memory leaks
+                        - URL#equals: The URL#equals implementation is insane (it actually tries to access the host
+                          with HTTP URLs for example)
+                      -->
+                      <value><![CDATA[
+                        {
+                          "java.io.File": ["deleteOnExit"],
+                          "java.net.URL": ["equals"]
+                        }
+                      ]]></value>
+                    </property>
+                  </properties>
+                </processorProperty>
+                <processorProperty>
+                  <name>org.xwiki.tool.spoon.ComponentAnnotationProcessor</name>
+                  <properties>
+                    <property>
+                      <name>skipForeignDeclarations</name>
+                      <value>false</value>
+                    </property>
+                  </properties>
+                </processorProperty>
+                <processorProperty>
+                  <name>org.xwiki.tool.spoon.InjectAnnotationProcessor</name>
+                  <properties>
+                    <property>
+                      <name>excludedFieldTypes</name>
+                      <value><![CDATA[
+                        []
+                      ]]></value>
+                    </property>
+                  </properties>
+                </processorProperty>
+              </processorProperties>
             </configuration>
           </execution>
         </executions>
